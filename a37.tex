@@ -1,0 +1,58 @@
+ss{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts,amssymb,amsthm,fancybox,amsmath,fullpage}
+\usepackage{times}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{tikz}
+
+\title{Quiz Night}
+\author{This is for you Revon}
+\date{March 2018}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \item Calculate using Trig Subsitution \par $$\int_{}^{} \frac{dx}{x^2\sqrt{1+x^2} \theta} dx$$ \par
+    $$\int_{}^{} \frac{sec^2\theta}{tan^2\theta \sqrt{1+tan^2\theta}} d\theta$$ \par
+    $$\int_{}^{} \frac{sec^2\theta}{tan^2\sqrt{sec^2}\theta} d\theta$$ \par
+    $$\int_{}^{} \frac{sec^2\theta}{tan^2\theta sec\theta} d\theta$$ \par
+    $$\int_{}^{} \frac{sec\theta}{tan^2\theta} d\theta$$ \par
+    $$\int_{}^{} \frac{\frac{1}{cos\theta}}{\frac{sin^2\theta}{cos^2\theta}} d\theta$$ \par
+    $$\int_{}^{} \frac{cos^2\theta}{cos\theta sin^2\theta} d\theta$$ \par
+    $$\int_{}^{} \frac{cos\theta}{sin^2\theta} d\theta$$ \par
+    $$u = sin\theta, du=cos\theta d\theta $$ \par
+    $$\int_{}^{} \frac{du}{u^2}$$ \par
+    $$-\frac{1}{u} + c$$ \par
+    $$-\frac{1}{sin\theta} + c$$ \par
+    $$-csc\theta + c$$ \par
+    
+    \item Determine Convergence using BMCT
+    $$ a_n = \frac{2^n}{n!}$$
+    
+    $$\frac{x_{n+1}}{x_n} = \frac{\frac{2^{n+1}}{(n+1)!}}{\frac{2^n}{n!}}$$
+    $$\frac{2}{n+1} < 1$$
+    and is bounded below
+    $$\lim_{x\to\infty} \frac{2^n}{n!} = 0$$
+    Seq positive and decreasing. Therefore seq is convergent
+    
+    \item Determine convergence of series 
+    $$\sum_{n=1}^{\infty} \frac{1}{n^2 +17}$$
+    Integral Test \par
+    $$ \int_{1}^{\infty} \frac{1}{x^2 +17} dx $$
+    $$ \lim_{A\to\infty} \int_{1}^{A} \frac{1}{x^2 +17} dx $$
+    $$\lim_{A\to\infty}  \frac{1}{\sqrt{17}}  arctan(\frac{x}{\sqrt{17}}) \Big|_1^A$$
+    $$ \frac{1}{\sqrt{17}} \lim_{A\to\infty} arctan(\frac{x}{\sqrt{17}}) \Big|_1^A$$
+    $$ \frac{1}{\sqrt{17}} \lim_{A\to\infty} arctan(\frac{A}{\sqrt{17}}) - arctan(\frac{1}{\sqrt{17}})$$
+     $$ \frac{1}{\sqrt{17}}[ \frac{\pi}{2} - arctan(\frac{1}{\sqrt{17}})]$$
+     Therefore convergent by integral test \par
+    
+    
+    
+    
+\end{enumerate}
+
+\end{document}
+
