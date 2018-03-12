@@ -1,4 +1,32 @@
 \documentclass[12pt]{article}
 \begin{document}
 This is where you put your answers for you questions. 
+
+Answers for CSCA48:
+
+Question 1: 15
+
+Question 2: 12 == 30, log(n^2), n^2+log(n), 2^n+3log(n), 3n^3
+
+Question 3:
+
+def heapify(A, i, size):
+	max = i
+	if ((2i+1) <= size and A[2i+1] > A[i]):
+		max = 2i+1
+	if ((2i+2) <= size and A[2i+2] > A[max]):
+		max = 2i+2
+	if ( max != i ):
+		# swap A[i] and A[max]
+		temp = A[max]
+		A[max] = A[i]
+		A[i] = temp
+		# recursively call heapify
+		heapify(A, max, size)
+
+Complexity:
+We know that a heap is represented by a compact tree that has the height of floor(lgn)+1.
+Therefore, the Big-Oh is O(lg(n)).
+
+
 \end{document}
