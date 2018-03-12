@@ -1,0 +1,39 @@
+\documentclass[11pt]{article}
+\usepackage{listings}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+
+\usepackage{full page} % margins are smaller
+
+\title{Assignment 3}
+
+\begin{document}
+
+\begin{lstlisting}
+def randomFunc(A):
+	''' (List of ints) -> int
+	Does something with the list of numbers A.
+	'''
+	x = 0
+	if len(A) != 0:
+		x += A[0] + randomFunc(A[1:])
+	return x 
+\end{lstlisting}
+
+
+1. Given the function randomFunc(), what does randomFunc([1,2,3,4,5]) return?\\
+
+
+2. Sort the following functions (of positive integer n) in big-Oh order. I.e., write them in an order so that each function is in big-Oh of the one immediately after it. If functions are big-Oh of each other, then group them together using ?==?.
+For example, given three functions f1, f2 and f3 such that f1 ? O(f2) and f2 ? O(f1) and f1, f2 ? O(f3),
+we would order them f1 == f2, f3.\\
+
+$12, 3n^3, n^2+log(n), 30, log(n^2), 2^n+3log(n)$\\
+\\
+3. Question: Code heapify for a priority heap and find the complexity. \\
+Hint: What is the height of a compact tree?\\
+Hint: The index of the left child of the node at index i is 2i+1.\\
+Hint: The index of the right child of the node at index i is 2i+2.\\
+Hint: The index of the parent of the node at index i is (i-1)//2. [Integer division]\\
+
+\end{document}
