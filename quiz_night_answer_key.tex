@@ -4,9 +4,20 @@ This is where you put your answers for you questions.
 
 Answers for CSCA48:
 
-Question 1: 15
+Question 1:
+You have a list of integers, and randomFunc returns a list where each index  
+is the product of every integer at every index except for the current index.
+Complexity is O(n^2)
 
-Question 2: 12 == 30, log(n^2), n^2+log(n), 2^n+3log(n), 3n^3
+Question 2: 
+
+This is a post order traversal implemented iteratively.
+  
+  def inorder(root):
+    if root != None:
+        inorder(root.left)
+        print(root.data)
+        inorder(root.right)
 
 Question 3:
 
